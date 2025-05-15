@@ -6,6 +6,7 @@ import Sidebar from "./Components/Sidebar";
 import CreatePost from "./Components/CreatePost";
 import Footer from "./Components/Footer";
 import Home from "./Components/PostList";
+import PostList from "./Components/PostList";
 const App = () => {
   const [selectedTab, setSelectedTab] = useState("Home");
 
@@ -16,7 +17,7 @@ const App = () => {
 
         <div className="content">
           <Navbar />
-          {selectedTab === "Home" ? <Home /> : <CreatePost />}
+          {selectedTab === "Home" ? <PostList /> : <CreatePost />}
 
           <Footer />
         </div>
